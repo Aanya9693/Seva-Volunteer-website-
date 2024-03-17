@@ -1,5 +1,5 @@
 import "./sidebar.css";
-import photo from "../static/profile2.jpg"
+import photo from "../../static/profile2.jpg"
 
 function Sidebar() {
     return (
