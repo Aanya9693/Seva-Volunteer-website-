@@ -9,9 +9,13 @@ function Sidebar() {
 
     useEffect(()=>{
         const getCats = async()=>{
-            const res = await axios.get("/categories");
-            // console.log(res.data);
-            setCats(res.data);
+            try{
+                const res = await axios.get("/categories");
+                setCats(res.data);
+                // console.log(res.data);
+            }catch(err){
+                console.error("Error fetching categories:", err);
+            }
         };
         getCats();
     },[])
