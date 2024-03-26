@@ -1,5 +1,5 @@
 import "./post.css";
-import Img from "../../static/photo.jpg"
+import Img from "../../static/seva.png"
 import { Link } from "react-router-dom";
 function Post({post}) {
     const PF = "http://localhost:5000/images/"
@@ -20,6 +20,8 @@ function Post({post}) {
         )}
 
             <div className="postInfo">
+                <span className="postDate">{new Date(post.createdAt).toDateString()}</span>
+                
                 <div className="postCats">{
                     post.categories.map(c=>(
                         <span className="postCat">
@@ -34,7 +36,6 @@ function Post({post}) {
                     </span>
                 </Link>
                 <hr />
-                <span className="postDate">{new Date(post.createdAt).toDateString()}</span>
             </div>
             <p className="postDesc">
                {post.desc}

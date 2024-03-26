@@ -1,6 +1,12 @@
+.logo{
+    border-radius: 50%;
+    width: 80px;
+}
+
 .top{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     width: 100%;
-    height: 50px;
+    height: 82px;
     background-color: white;
     position: sticky;
     top: 0;
@@ -11,13 +17,13 @@
 }
 
 .topLeft, .topRight{
-    flex: 3;
+    flex: 2;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .topCenter{
-    flex: 6;
+    flex: 8;
 }
 
 .topIcon{
@@ -32,6 +38,7 @@
     height: 40px;
     border-radius: 50%;
     object-fit: cover;
+    cursor: pointer;
 }
 
 .topList{
@@ -42,8 +49,8 @@
     list-style: none;
 }
 .topListItem{
-    margin-right: 20px;
-    font-size: 18px;
+    margin-right: 30px;
+    font-size: 20px;
     font-weight: 300;
     cursor: pointer;
 }
@@ -53,4 +60,8 @@
     color: #666;
     cursor: pointer;
     margin-left: 15px;
+}
+.topListItem:hover {
+    color: #ff5533;
+    font-weight: 500;
 }

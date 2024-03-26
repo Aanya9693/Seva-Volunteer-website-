@@ -1,5 +1,5 @@
 .header{
-    margin-top: 60px;
+    margin-top: 10px;
 }
 
 .headerTitles{
@@ -7,23 +7,43 @@
     flex-direction: column;
     align-items: center;
     font-family: "Lora", serif;
-    color: #444;
+    color: #ff5533;
 }
 
 .headerTitleSm{
     position: absolute;
-    top: 18%;
+    top: 16%;
     font-size: 20px;
 }
 .headerTitleLg{
     position: absolute;
-    top: 20%;
+    top: 18%;
     font-size: 100px;
+}
+.headerDesc2{
+    position: absolute;
+    font-size: 24px;
+    text-align: center;
+    font-family: "Varela Round", sans-serif;
+    width: 50%;
+    top: 80%;
+    margin-left: 40px;
+}
+.headerDesc{
+    position: absolute;
+    border-top: solid 1px #a7a4a4;
+    border-bottom: solid 1px #a7a4a4;
+    font-size: 60px;
+    text-align: center;
+    font-family: "Varela Round", sans-serif;
+    width: 40%;
+    top: 50%;
+    margin-left: 40px;
 }
 
 .headerImg{
     width: 100%;
-    height: 450px;
+    height: 500px;
     margin-top: 80px;
     object-fit: cover;
 }

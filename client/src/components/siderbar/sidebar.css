@@ -1,3 +1,7 @@
+.sidebarimg{
+  border-radius: 50%;
+}
+
 .sidebar {
     flex: 3;
     /* height: fit-content; */
@@ -19,15 +23,15 @@
   .sidebarTitle {
     margin: 10px;
     padding: 5px;
-    width: 80%;
+    width: 90%;
     border-top: solid 1px #a7a4a4;
     border-bottom: solid 1px #a7a4a4;
     text-align: center;
     font-family: "Varela Round", sans-serif;
-    font-size: 12px;
-    line-height: 19px;
+    font-size: 32px;
+    /* line-height: 30px; */
     color: #222222;
-    font-weight: 600;
+    /* font-weight: 600; */
   }
   
   .sidebarItem > img {

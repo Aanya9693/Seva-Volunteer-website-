@@ -6,6 +6,7 @@
     flex: 9;
     padding: 20px;
     margin: 20px;
+    
   }
   
   .settingsTitle {
@@ -13,11 +14,15 @@
     align-items: center;
     justify-content: space-between;
   }
-  
+  .settingsUpdateTitle{
+    font-size: 32px;
+    margin-bottom: 30px;
+
+  }
   .settingsTitleUpdate {
     font-size: 30px;
     margin-bottom: 20px;
-    color: lightcoral;
+    color: #ff5533;
   }
   
   .settingsTitleDelete {
@@ -30,7 +35,11 @@
     display: flex;
     flex-direction: column;
   }
-  
+  .input{
+    border-radius: 20px;
+    padding: 8px;
+    padding-left: 12px;
+  }
   .settingsPP {
     display: flex;
     align-items: center;
@@ -56,7 +65,7 @@
     border-radius: 50%;
     margin-left: 10px;
     color: white;
-    background-color: lightcoral;
+    background-color: #ff5533;
     cursor: pointer;
   }
   

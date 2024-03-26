@@ -9,6 +9,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Routes } from 'react-router-dom';
 import { useContext } from "react";
 import { Context } from "./context/Context";
+import About from "./pages/about/about";
+import Contact from "./pages/contact/contact";
 function App() {
   const {user} = useContext(Context);
   return (
@@ -21,6 +23,10 @@ function App() {
         <Route path='/write' element={user ? <Write/> : <Register/>} />
         <Route path='/settings' element={user ? <Settings/> : <Register/>} />
         <Route path='/post/:postId' element={<Single/>} />
+        <Route path='/about' element={ <About/>} />
+        <Route path='/contact' element={ <Contact/>} />
+        
+
       </Routes>
     </Router>
   );

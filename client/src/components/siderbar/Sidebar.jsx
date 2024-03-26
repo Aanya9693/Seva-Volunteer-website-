@@ -1,6 +1,6 @@
 /* eslint-disable array-callback-return */
 import "./sidebar.css";
-import photo from "../../static/profile2.jpg"
+import photo from "../../static/helping.jpg"
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
@@ -22,21 +22,21 @@ function Sidebar() {
     return (
         <div className='sidebar'>
             <div className="sidebarItem">
-                <span className="sidebarTitle">ABOUT ME</span>
+                <span className="sidebarTitle">More people.<br/>More impact.</span>
                 <img
+                    className="sidebarimg"
                     src={photo}
                     alt=""
                 />
                 <p>
-                    Laboris sunt aute cupidatat velit magna velit ullamco dolore mollit
-                    amet ex esse.Sunt eu ut nostrud id quis proident.
+                VolunteerMatch is the most effective way to recruit highly qualified volunteers for your nonprofit. We match you with people who are passionate about and committed to your cause, and who can help when and where you need them.
                 </p>
             </div>
             <div className="sidebarItem">
                 <span className="sidebarTitle">CATEGORIES</span>
                 <ul className="sidebarList">
-                {cats.map((c) => (
-                    <Link to={`/?cat=${c.name}`} className="link">
+                {cats.map((c, i) => (
+                    <Link to={`/?cat=${c.name}`} className="link" key={i}>
                         <li className="sidebarListItem">
                             {c.name}
                         </li>
