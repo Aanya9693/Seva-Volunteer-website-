@@ -44,6 +44,7 @@ export default function Write() {
           <input
             type="file"
             id="fileInput"
+            className="writeInput"
             style={{ display: "none" }}
             onChange={(e) => setFile(e.target.files[0])}
           />
@@ -51,6 +52,7 @@ export default function Write() {
             type="text"
             placeholder="Title"
             className="writeInput"
+            
             autoFocus={true}
             onChange={e=>setTitle(e.target.value)}
           />

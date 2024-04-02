@@ -4,14 +4,14 @@ import './footer.css'; // Import your CSS file
 export default function Footer() {
   return (
     <footer className='footer'>
-    <div class="container">
+    <div className="container">
     <h2 className='heading'>Sign up for our newsletter</h2>
     <form action="/put">
-      <div class="row">
-        <div class="input-field">
-          <input type="text" id="email" placeholder="Email address" required />
+      <div className="row">
+        <div className="input-field">
+          <input className='footerinput' type="text" id="email" placeholder="Email address" required />
         </div>
-        <div class="button">
+        <div className="button">
           <button type="submit">Subscribe</button>
         </div>
       </div>

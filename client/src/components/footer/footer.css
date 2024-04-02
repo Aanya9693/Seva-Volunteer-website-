@@ -26,7 +26,7 @@ button {
   .row > * {
     margin: 5px;
   }
-  input[type="text"] {
+  .footerinput {
     width: 50%;
     padding: 10px;
     border: 1px solid #ccc;
