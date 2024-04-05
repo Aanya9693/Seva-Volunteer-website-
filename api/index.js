@@ -14,6 +14,8 @@ const path = require("path");
 dotenv.config();
 //this application is able to send the json object
 app.use(express.json());
+app.use(cors({ credentials: true, origin: process.env.REMOTE })); // <- CORS configuration, in case if you wanted to implemented authorization
+app.options(process.env.REMOTE, cors());
 app.use("/images", express.static(path.join(__dirname, "/images")))
 
 mongoose.connect(process.env.MONGO_URL)
