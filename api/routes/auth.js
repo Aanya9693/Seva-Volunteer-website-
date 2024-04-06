@@ -5,7 +5,6 @@ const bcrypt = require('bcrypt');
 //REGISTER
 router.post("/register", async (req, res)=>{
     try{
-
         const salt=await bcrypt.genSalt(10);
         const hashedPass=await bcrypt.hash(req.body.password, salt);
         const newUser = new User({
@@ -23,6 +22,7 @@ router.post("/register", async (req, res)=>{
 //LOGIN
 router.post("/login", async(req, res)=>{
     try{
+
         const user = await User.findOne({username: req.body.username})
         //if there is no user
         !user && res.status(400).json("Wrong credentials!")

@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 function Sidebar() {
+//   const api=axios.create({baseURL:"https://blog-ea1i.onrender.com/api/"})
+
     const [cats, setCats] = useState([]);
 
     useEffect(()=>{

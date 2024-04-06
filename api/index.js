@@ -10,11 +10,19 @@ const categoryRoute = require("./routes/categories");
 const multer = require("multer");
 const path = require("path");
 //authentication path
+const cors = require('cors')
 
+app.use(
+    cors({
+        credentials: 'include',
+        origin:'http://localhost:3000'
+    })
+);
+// app.use(cors())
 dotenv.config();
 //this application is able to send the json object
-app.use(express.json());
-app.use(cors({ credentials: true, origin: process.env.REMOTE })); // <- CORS configuration, in case if you wanted to implemented authorization
+// app.use(express.json());
+// app.use(cors({ credentials: true, origin: process.env.REMOTE })); // <- CORS configuration, in case if you wanted to implemented authorization
 app.options(process.env.REMOTE, cors());
 app.use("/images", express.static(path.join(__dirname, "/images")))
 

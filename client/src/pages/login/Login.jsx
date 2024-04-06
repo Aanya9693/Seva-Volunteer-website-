@@ -5,6 +5,8 @@ import { Context } from "../../context/Context";
 import "./login.css";
 
 export default function Login() {
+  // const api=axios.create({baseURL:"https://blog-ea1i.onrender.com/api/"})
+
   const userRef = useRef();
   const passwordRef = useRef();
   const { dispatch, isFetching } = useContext(Context);
@@ -18,6 +20,7 @@ export default function Login() {
         password: passwordRef.current.value,
       });
       dispatch({ type: "LOGIN_SUCCESS", payload: res.data });
+      // console.log("login issues....");
     } catch (err) {
       dispatch({ type: "LOGIN_FAILURE" });
     }
@@ -41,6 +44,7 @@ export default function Login() {
           placeholder="Enter your password..."
           ref={passwordRef}
         />
+        
         <button className="loginButton" type="submit" disabled={isFetching}>
           Login
         </button>

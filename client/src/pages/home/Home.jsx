@@ -7,6 +7,8 @@ import {useLocation} from "react-router";
 import axios from "axios";
 
 function Home() {
+//   const api=axios.create({baseURL:"https://blog-ea1i.onrender.com/api/"})
+
     const [posts, setPosts] = useState([]);
     const {search} = useLocation();
 
