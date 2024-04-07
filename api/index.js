@@ -18,7 +18,7 @@ app.use(
         origin:'http://localhost:3000'
     })
 );
-// app.use(cors())
+
 dotenv.config();
 //this application is able to send the json object
 // app.use(express.json());
