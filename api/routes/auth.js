@@ -23,6 +23,7 @@ router.post("/register", async (req, res)=>{
 router.post("/login", async(req, res)=>{
     try{
         // console.log("auth login issues....", req.body)
+        console.log(req.body);
         const user = await User.findOne({username: req.body.username})
         //if there is no user
         !user && res.status(400).json("Wrong credentials!")

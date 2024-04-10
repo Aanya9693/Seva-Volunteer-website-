@@ -9,8 +9,10 @@ const postRoute = require("./routes/posts");
 const categoryRoute = require("./routes/categories");
 const multer = require("multer");
 const path = require("path");
+const bodyParser = require('body-parser')
 //authentication path
-const cors = require('cors')
+const cors = require('cors');
+app.use(bodyParser.json())
 
 app.use(
     cors({
