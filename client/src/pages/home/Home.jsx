@@ -21,10 +21,14 @@ function Home() {
 
     useEffect(()=>{
         const fetchPosts = async()=>{
-            const apiUrl = process.env.process.env.REMOTE || 'http://localhost:3000';
+            try{
+                const apiUrl = process.env.process.env.REMOTE || 'http://localhost:3000';
                 const res = await axios.get(`${apiUrl}/posts${search}`);
-            // const res = await axios.get("http://localhost:3000/posts" + search)
-            setPosts(res.data)
+                // const res = await axios.get("http://localhost:3000/posts" + search)
+                setPosts(res.data)
+            }catch (error) {
+                console.error('Error fetching posts:', error);
+            }
         }
         fetchPosts()
     },[search])
