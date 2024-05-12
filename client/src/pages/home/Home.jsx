@@ -5,11 +5,9 @@ import Sidebar from "../../components/siderbar/Sidebar";
 import { useEffect, useState } from "react";
 import {useLocation} from "react-router";
 import axios from "axios";
-const express = require("express");
 
-const app=express();
-const dotenv=require("dotenv");
-dotenv.config();
+// const dotenv=require("dotenv");
+// dotenv.config();
 
 function Home() {
 //   const api=axios.create({baseURL:"https://blog-ea1i.onrender.com/api/"})
@@ -21,10 +19,14 @@ function Home() {
 
     useEffect(()=>{
         const fetchPosts = async()=>{
-            const apiUrl = process.env.process.env.REMOTE || 'http://localhost:3000';
-                const res = await axios.get(`${apiUrl}/posts${search}`);
-            // const res = await axios.get("http://localhost:3000/posts" + search)
-            setPosts(res.data)
+            try{
+                const apiUrl = process.env.REMOTE || 'http://localhost:3000';
+                    const res = await axios.get(`${apiUrl}/posts${search}`);
+                // const res = await axios.get("http://localhost:3000/posts" + search)
+                setPosts(res.data)
+            }catch (error) {
+                console.error('Error fetching posts:', error);
+            }
         }
         fetchPosts()
     },[search])
