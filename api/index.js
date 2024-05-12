@@ -14,14 +14,21 @@ const bodyParser = require('body-parser')
 const cors = require('cors');
 app.use(bodyParser.json())
 
+dotenv.config();
+
+app.enable('trust proxy');
+app.set('trust proxy', 1);
+
+console.log('REMOTE: ', process.env.REMOTE);
+
 app.use(
     cors({
-        credentials: 'include',
-        origin:'http://localhost:3000'
+        credentials: true,
+        origin: process.env.REMOTE
     })
 );
 
-dotenv.config();
+
 //this application is able to send the json object
 // app.use(express.json());
 // app.use(cors({ credentials: true, origin: process.env.REMOTE })); // <- CORS configuration, in case if you wanted to implemented authorization
