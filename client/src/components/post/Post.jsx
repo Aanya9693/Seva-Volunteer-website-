@@ -22,14 +22,14 @@ function Post({post}) {
             <div className="postInfo">
                 <span className="postDate">{new Date(post.createdAt).toDateString()}</span>
                 
-                <div className="postCats">{
-                    post.categories.map(c=>(
-                        <span className="postCat">
+                <div className="postCats">
+                    {Array.isArray(post.categories) && post.categories.map(c => (
+                        <span className="postCat" key={c._id}>
                             {c.name}
                         </span>
-                    ))
-                }
+                    ))}
                 </div>
+
                 <Link to={`/post/${post._id}`} className="link">
                     <span className="postTitle">
                         {post.title}
