@@ -1,5 +1,4 @@
 import "./topbar.css";
-import Img from "../../static/profile.jpg"
 import logo from "../../static/logo.jpg";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
@@ -11,7 +10,8 @@ function TopBar() {
     const handleLogout = () =>{
       dispatch({type: "LOGOUT"})
     }
-    const PF = "http://localhost:5000/images/"
+    const PF = "https://seva-65j0.onrender.com/images/";
+
 
     // Assuming you have a state variable to track the menu visibility
     const [menuOpen, setMenuOpen] = useState(false);

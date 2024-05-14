@@ -6,7 +6,6 @@ import axios from "axios";
 
 export default function Settings() {
   // const api=axios.create({baseURL:"https://blog-ea1i.onrender.com/api/"})
-
   const [file, setFile] = useState(null);
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
@@ -14,7 +13,8 @@ export default function Settings() {
   const [success, setSuccess] = useState(false);
 
   const { user, dispatch } = useContext(Context);
-  const PF = "http://localhost:5000/images/"
+  const PF = "https://seva-65j0.onrender.com/images/";
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();

@@ -8,19 +8,25 @@ function Sidebar() {
 //   const api=axios.create({baseURL:"https://blog-ea1i.onrender.com/api/"})
 
     const [cats, setCats] = useState([]);
-
+    const [loading, setLoading] = useState(true);
     useEffect(()=>{
         const getCats = async()=>{
             try{
                 const res = await axios.get("/categories");
                 setCats(res.data);
+                setLoading(false);
                 // console.log(res.data);
             }catch(err){
                 console.error("Error fetching categories:", err);
+                setLoading(false);
             }
         };
         getCats();
     },[])
+    if (loading) {
+        return <div>Loading...</div>;
+    }
+    
     return (
         <div className='sidebar'>
             <div className="sidebarItem">
