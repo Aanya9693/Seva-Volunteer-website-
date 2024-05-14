@@ -43,14 +43,15 @@ function Sidebar() {
             <div className="sidebarItem">
                 <span className="sidebarTitle">CATEGORIES</span>
                 <ul className="sidebarList">
-                {cats.map((c, i) => (
-                    <Link to={`/?cat=${c.name}`} className="link" key={i}>
-                        <li className="sidebarListItem">
-                            {c.name}
-                        </li>
-                    </Link>
-                ))}
+                    {Array.isArray(cats) && cats.map((c, i) => (
+                        <Link to={`/?cat=${c.name}`} className="link" key={i}>
+                            <li className="sidebarListItem">
+                                {c.name}
+                            </li>
+                        </Link>
+                    ))}
                 </ul>
+
             </div>
             <div className="sidebarItem">
                 <span className="sidebarTitle">FOLLOW US</span>
