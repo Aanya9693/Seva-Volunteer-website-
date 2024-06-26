@@ -12,10 +12,9 @@ function Home() {
     const {search} = useLocation();
 
     // console.log(location);
-
     useEffect(()=>{
         const fetchPosts = async()=>{
-            const res = await axios.get("http://localhost:3000/posts" + search)
+            const res = await axios.get("https://seva-kappa.vercel.app/posts" + search)
             setPosts(res.data)
         }
         fetchPosts()
