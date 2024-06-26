@@ -10,24 +10,15 @@ import axios from "axios";
 // dotenv.config();
 
 function Home() {
-//   const api=axios.create({baseURL:"https://blog-ea1i.onrender.com/api/"})
-
+    //USE STATE HOOK, intial state will be empty array
     const [posts, setPosts] = useState([]);
     const {search} = useLocation();
 
     // console.log(location);
-
     useEffect(()=>{
         const fetchPosts = async()=>{
-            try{
-                const apiUrl = process.env.REMOTE;
-                const res = await axios.get(`${apiUrl}/posts${search}`);
-                // const res = await axios.get("http://localhost:3000/posts" + search)
-                setPosts(res.data)
-            }catch (error) {
-                console.error('Error fetching posts:', error);
-                throw error;
-            }
+            const res = await axios.get("https://seva-kappa.vercel.app/posts" + search)
+            setPosts(res.data)
         }
         fetchPosts()
     },[search])

@@ -27,7 +27,7 @@ router.put("/:id", async (req, res) => {
     } else {
       res.status(401).json("You can update only your account!");
     }
-  });
+});
 
 
 //DELETE
@@ -68,4 +68,6 @@ router.get("/:id", async(req, res)=>{
         res.status(500).json(err);
     }
 });
+
+
 module.exports = router;
