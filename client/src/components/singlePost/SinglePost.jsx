@@ -11,7 +11,9 @@ export default function SinglePost() {
 
   const [post, setPost] = useState({});
   
-  const PF = "http://localhost:5000/images/";
+  // const PF = "http://localhost:5000/images/";
+  const PF = `https://blog-ea1i.onrender.com/images/`;
+
   const { user } = useContext(Context);
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
