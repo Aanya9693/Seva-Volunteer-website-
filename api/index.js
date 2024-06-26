@@ -20,12 +20,12 @@ app.set('trust proxy', 1);
 
 console.log('REMOTE: ', process.env.REMOTE);
 
-app.use(
-    cors({
-        credentials: true,
-        origin: process.env.REMOTE
-    })
-);
+// app.use(
+//     cors({
+//         credentials: true,
+//         origin: process.env.REMOTE
+//     })
+// );
 
 
 //this application is able to send the json object
