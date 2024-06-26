@@ -2,7 +2,9 @@ import "./post.css";
 import Img from "../../static/seva.png"
 import { Link } from "react-router-dom";
 function Post({post}) {
-    const PF = "https://seva-65j0.onrender.com/images/"
+    // const PF =  "http://localhost:5000/images/"
+    const PF = `https://blog-ea1i.onrender.com/images/`;
+    
     return (
         <div className='post'>
         {post.photo ? (

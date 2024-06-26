@@ -13,7 +13,9 @@ export default function Settings() {
   const [success, setSuccess] = useState(false);
 
   const { user, dispatch } = useContext(Context);
-  const PF = "https://seva-65j0.onrender.com/images/"
+  // const PF = "http://localhost:5000/images/"
+  const PF = `https://blog-ea1i.onrender.com/images/`;
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();

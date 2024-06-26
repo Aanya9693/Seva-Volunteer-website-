@@ -10,7 +10,9 @@ function TopBar() {
     const handleLogout = () =>{
       dispatch({type: "LOGOUT"})
     }
-    const PF = "https://seva-65j0.onrender.com/images/"
+    // const PF = "http://localhost:5000/images/"
+    const PF = `https://blog-ea1i.onrender.com/images/`;
+
 
     // Assuming you have a state variable to track the menu visibility
     const [menuOpen, setMenuOpen] = useState(false);
