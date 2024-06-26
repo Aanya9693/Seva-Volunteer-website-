@@ -45,12 +45,15 @@ router.put("/:id", async (req, res) => {
 router.delete("/:id", async (req, res) => {
     try {
       const post = await Post.findById(req.params.id);
+      // console.log("post delete action: ", post.username);
+      // console.log("post delete: ", req.body.username);
       if (post.username === req.body.username) {
         try {
-          await post.delete();
+          await post.deleteOne();
           res.status(200).json("Post has been deleted...");
         } catch (err) {
           res.status(500).json(err);
+          console.log("error", err);
         }
       } else {
         res.status(401).json("You can delete only your post!");
