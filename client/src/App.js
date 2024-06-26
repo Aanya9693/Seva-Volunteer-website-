@@ -5,7 +5,7 @@ import Write from "./pages/write/Write";
 import Settings from "./pages/settings/Settings";
 import Register from "./pages/register/Register";
 import Login from "./pages/login/Login";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Routes } from 'react-router-dom';
 import { useContext } from "react";
 import { Context } from "./context/Context";
@@ -25,8 +25,6 @@ function App() {
         <Route path='/post/:postId' element={<Single/>} />
         <Route path='/about' element={ <About/>} />
         <Route path='/contact' element={ <Contact/>} />
-        
-
       </Routes>
     </Router>
   );

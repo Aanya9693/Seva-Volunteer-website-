@@ -6,6 +6,9 @@ import { useEffect, useState } from "react";
 import {useLocation} from "react-router";
 import axios from "axios";
 
+// const dotenv=require("dotenv");
+// dotenv.config();
+
 function Home() {
     //USE STATE HOOK, intial state will be empty array
     const [posts, setPosts] = useState([]);

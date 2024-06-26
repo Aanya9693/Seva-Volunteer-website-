@@ -12,4 +12,5 @@ function Posts({ posts = [] }) {
     );
 }
 
+
 export default Posts;

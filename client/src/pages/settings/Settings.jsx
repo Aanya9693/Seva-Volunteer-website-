@@ -5,6 +5,7 @@ import { Context } from "../../context/Context";
 import axios from "axios";
 
 export default function Settings() {
+  // const api=axios.create({baseURL:"https://blog-ea1i.onrender.com/api/"})
   const [file, setFile] = useState(null);
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");

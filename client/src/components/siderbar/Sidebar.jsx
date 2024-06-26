@@ -5,20 +5,28 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 function Sidebar() {
-    const [cats, setCats] = useState([]);
+//   const api=axios.create({baseURL:"https://blog-ea1i.onrender.com/api/"})
 
+    const [cats, setCats] = useState([]);
+    const [loading, setLoading] = useState(true);
     useEffect(()=>{
         const getCats = async()=>{
             try{
                 const res = await axios.get("/categories");
                 setCats(res.data);
+                setLoading(false);
                 // console.log(res.data);
             }catch(err){
                 console.error("Error fetching categories:", err);
+                setLoading(false);
             }
         };
         getCats();
     },[])
+    if (loading) {
+        return <div>Loading...</div>;
+    }
+    
     return (
         <div className='sidebar'>
             <div className="sidebarItem">
@@ -35,14 +43,15 @@ function Sidebar() {
             <div className="sidebarItem">
                 <span className="sidebarTitle">CATEGORIES</span>
                 <ul className="sidebarList">
-                {cats.map((c, i) => (
-                    <Link to={`/?cat=${c.name}`} className="link" key={i}>
-                        <li className="sidebarListItem">
-                            {c.name}
-                        </li>
-                    </Link>
-                ))}
+                    {Array.isArray(cats) && cats.map((c, i) => (
+                        <Link to={`/?cat=${c.name}`} className="link" key={i}>
+                            <li className="sidebarListItem">
+                                {c.name}
+                            </li>
+                        </Link>
+                    ))}
                 </ul>
+
             </div>
             <div className="sidebarItem">
                 <span className="sidebarTitle">FOLLOW US</span>

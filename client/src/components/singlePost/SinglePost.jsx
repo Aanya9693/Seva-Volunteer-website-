@@ -6,6 +6,9 @@ import { Context } from "../../context/Context";
 import "./singlepost.css";
 
 export default function SinglePost() {
+  // const api=axios.create({baseURL:"https://blog-ea1i.onrender.com/api/"})
+
+  
   const location = useLocation();
   const path = location.pathname.split("/")[2];
 
@@ -16,7 +19,8 @@ export default function SinglePost() {
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
   const [updateMode, setUpdateMode] = useState(false);
-  const username = user.username;
+  const username = user ? user.username : null;
+
   useEffect(() => {
     const getPost = async () => {
       const res = await axios.get("/posts/" + path);

@@ -1,0 +1,144 @@
+[33mcommit 9cb5d72a8be0c234eafc2c3b87696c349858729a[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Aanya Kumari <101557638+Aanya9693@users.noreply.github.com>
+Date:   Sun May 12 21:21:34 2024 +0530
+
+    update gitingore
+
+[33mcommit d76b81d7d8c3d8ed45d8c207305c56655d010b32[m
+Merge: add46b0 66ff686
+Author: Aanya Kumari <101557638+Aanya9693@users.noreply.github.com>
+Date:   Sun May 12 21:18:34 2024 +0530
+
+    Merge branch 'main' of https://github.com/Aanya9693/Blog
+
+[33mcommit add46b08b6ef48c8e5d85d71e96f05bbf672ae28[m
+Author: Aanya Kumari <101557638+Aanya9693@users.noreply.github.com>
+Date:   Sun May 12 21:18:09 2024 +0530
+
+    added gitingnore in api
+
+[33mcommit 66ff686d62bc0961ef7f52e89ca723f27ceaf71d[m
+Author: Aanya Kumari <101557638+Aanya9693@users.noreply.github.com>
+Date:   Sun May 12 21:17:03 2024 +0530
+
+    Delete api/node_modules directory
+
+[33mcommit 48f54fb81d042df6e7d285b1265fdc8c6e12fb92[m
+Author: Aanya Kumari <101557638+Aanya9693@users.noreply.github.com>
+Date:   Sun May 12 20:59:46 2024 +0530
+
+    changed loacalhost to env
+
+[33mcommit 0f80aab02ba5765c4b6565e8704f9ee011cad15a[m
+Author: Aanya Kumari <101557638+Aanya9693@users.noreply.github.com>
+Date:   Sun May 12 20:37:11 2024 +0530
+
+    updated remote
+
+[33mcommit 5f1cefc5e2f377bec5fb05f949a60fdf78fa57ef[m
+Author: Aanya Kumari <101557638+Aanya9693@users.noreply.github.com>
+Date:   Sun May 12 20:29:39 2024 +0530
+
+    cors changes
+
+[33mcommit f9e3674dbd5d1820c0c933c1cb60b4a8fe40d09e[m
+Author: Aanya Kumari <101557638+Aanya9693@users.noreply.github.com>
+Date:   Wed May 8 21:39:03 2024 +0530
+
+    port changes
+
+[33mcommit b2a04fe422471a3aab5cbbf1d317eb6730e25abf[m
+Author: Aanya Kumari <101557638+Aanya9693@users.noreply.github.com>
+Date:   Wed Apr 10 12:36:19 2024 +0530
+
+    installed bodyparser
+
+[33mcommit 0c668eb6be82016ee0266182c98fb0705bb1c7c7[m
+Author: Aanya Kumari <101557638+Aanya9693@users.noreply.github.com>
+Date:   Sun Apr 7 11:52:48 2024 +0530
+
+    cors error resolved
+
+[33mcommit 95cbfce65c9681fd6c40e882a328f2c9ff30409b[m
+Author: Aanya Kumari <101557638+Aanya9693@users.noreply.github.com>
+Date:   Sat Apr 6 11:37:00 2024 +0530
+
+    changes for deploying
+
+[33mcommit 1eaf4941a743415bf440010a03fa9bc413dd08ec[m
+Author: Aanya Kumari <101557638+Aanya9693@users.noreply.github.com>
+Date:   Sat Apr 6 00:13:22 2024 +0530
+
+    deploying changes
+
+[33mcommit 8f2e3c510d25f0f0cef74b52460ca99b66dfee32[m
+Author: Aanya Kumari <101557638+Aanya9693@users.noreply.github.com>
+Date:   Fri Apr 5 23:54:53 2024 +0530
+
+    last commit
+
+[33mcommit 1c604639a65cab1473a2f0587db6aff7b29c488e[m
+Author: Aanya Kumari <101557638+Aanya9693@users.noreply.github.com>
+Date:   Tue Apr 2 20:41:48 2024 +0530
+
+    responsive for mobile
+
+[33mcommit 6defca7ad282076dc2b013f3f143566f3c454d7d[m
+Author: Aanya Kumari <101557638+Aanya9693@users.noreply.github.com>
+Date:   Wed Mar 27 00:10:02 2024 +0530
+
+    content updated
+
+[33mcommit c6fffc06a08f40c5d1087311998512bc3a80c0f8[m
+Author: Aanya Kumari <101557638+Aanya9693@users.noreply.github.com>
+Date:   Tue Mar 26 01:30:49 2024 +0530
+
+    Edit post completed
+
+[33mcommit 3d77a1e484e1fb28e827b79ae2259246e5f11177[m
+Author: Aanya Kumari <101557638+Aanya9693@users.noreply.github.com>
+Date:   Sun Mar 24 14:30:55 2024 +0530
+
+    rendering completed for categories/user posts
+
+[33mcommit 8a94e79cc37b36d1386d0402f1f9772ebe561aca[m
+Author: Aanya Kumari <101557638+Aanya9693@users.noreply.github.com>
+Date:   Fri Mar 22 00:25:47 2024 +0530
+
+    apis done
+
+[33mcommit dc25f1f566ccf172b4a35ec0baf158e473d480ae[m
+Author: Aanya Kumari <101557638+Aanya9693@users.noreply.github.com>
+Date:   Tue Mar 19 01:02:18 2024 +0530
+
+    finished user router
+
+[33mcommit 6103c781098e0343b6a2447d8186a70faf7d83f5[m
+Author: Aanya Kumari <101557638+Aanya9693@users.noreply.github.com>
+Date:   Tue Mar 19 00:38:17 2024 +0530
+
+    update method
+
+[33mcommit e553cd5434d3190092123a901b27c30def4a62d0[m
+Author: Aanya Kumari <101557638+Aanya9693@users.noreply.github.com>
+Date:   Mon Mar 18 23:53:35 2024 +0530
+
+    auth completed
+
+[33mcommit cdea745c448cd4fca1caf0020d6fb3aa7f27f722[m
+Author: Aanya Kumari <101557638+Aanya9693@users.noreply.github.com>
+Date:   Sun Mar 17 12:39:39 2024 +0530
+
+    post/single-page completed
+
+[33mcommit 49e6e999c894a705925db6bae3009350c7092550[m
+Author: Aanya Kumari <101557638+Aanya9693@users.noreply.github.com>
+Date:   Sun Mar 17 00:18:45 2024 +0530
+
+    topbar/sidebar
+
+[33mcommit 1328db8eee7e2ea5b4e774f1d4b8240b269fa29e[m
+Author: Aanya Kumari <101557638+Aanya9693@users.noreply.github.com>
+Date:   Sat Mar 16 23:08:12 2024 +0530
+
+    header completed

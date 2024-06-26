@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e193e1dd.css",
+    "main.js": "/static/js/main.347b042e.js",
+    "static/media/seva.png": "/static/media/seva.11f4a79b99729c7be984.png",
+    "static/media/about.jpg": "/static/media/about.36c849d1d4faea1abd4f.jpg",
+    "static/media/helping.jpg": "/static/media/helping.6981b594d42c8da3bd6a.jpg",
+    "static/media/seva2.webp": "/static/media/seva2.17ff96e1ef5cf9892180.webp",
+    "static/media/profile.jpg": "/static/media/profile.07c169b12b785bc2e7f9.jpg",
+    "static/media/logo.jpg": "/static/media/logo.939722fd8e6423f4fb7b.jpg",
+    "index.html": "/index.html",
+    "main.e193e1dd.css.map": "/static/css/main.e193e1dd.css.map",
+    "main.347b042e.js.map": "/static/js/main.347b042e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e193e1dd.css",
+    "static/js/main.347b042e.js"
+  ]
+}
