@@ -1,5 +1,5 @@
 import "./topbar.css";
-import Img from "../../static/profile.jpg"
+// import Img from "../../static/profile.jpg"
 import logo from "../../static/logo.jpg";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
