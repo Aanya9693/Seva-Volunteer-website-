@@ -6,18 +6,15 @@ import { useEffect, useState } from "react";
 import {useLocation} from "react-router";
 import axios from "axios";
 
-// const dotenv=require("dotenv");
-// dotenv.config();
-
 function Home() {
-    //USE STATE HOOK, intial state will be empty array
     const [posts, setPosts] = useState([]);
     const {search} = useLocation();
 
     // console.log(location);
+
     useEffect(()=>{
         const fetchPosts = async()=>{
-            const res = await axios.get("https://seva-kappa.vercel.app/posts" + search)
+            const res = await axios.get("http://localhost:3000/posts" + search)
             setPosts(res.data)
         }
         fetchPosts()

@@ -4,7 +4,6 @@ import axios from "axios";
 import { Context } from "../../context/Context";
 
 export default function Write() {
-  // const api=axios.create({baseURL:"https://blog-ea1i.onrender.com/api/"})
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
   const [file, setFile] = useState(null);

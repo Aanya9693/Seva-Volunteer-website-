@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 import "./register.css";
 
 export default function Register() {
-  // const api=axios.create({baseURL:"https://blog-ea1i.onrender.com/api/"})
-
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
