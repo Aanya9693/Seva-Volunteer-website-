@@ -29,7 +29,7 @@ export default function Footer() {
 
       <div className='footer-text'>
         &copy; {new Date().getFullYear()} Copyright:
-        <a href='https://seva.com/'> Seva.com</a>
+        <a href='https://seva-kappa.vercel.app/'> Seva.com</a>
       </div>
     </footer>
   );
