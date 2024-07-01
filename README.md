@@ -70,7 +70,7 @@ To get a local copy up and running follow these simple steps.
    Open your terminal and run the following command to clone the repository to your local machine:
 
    ```sh
-   git clone https://github.com/Aanya9693/Seva-volunteer.git
+   git clone https://github.com/Aanya9693/Seva-volunteer.git](https://github.com/Aanya9693/Seva-Volunteer-website-.git
 
 3. **Navigate to the Project Directory**
 
