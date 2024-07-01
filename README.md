@@ -1,4 +1,4 @@
-# Seva - Volunteer Portal
+# Seva - volunteer website
 
 ![image](https://github.com/Aanya9693/Seva-Volunteer-website-/assets/101557638/11d259c0-48c9-4925-a9be-349d4148ffe4)
 
