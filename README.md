@@ -10,8 +10,10 @@ Seva is a platform that connects volunteers with nonprofit organizations. It's l
 ## Features
 
 - Post and browse volunteer opportunities
+- Delete or Edit your previous post
 - Connect with nonprofit organizations
 - Categories for different types of volunteer work
+- Update your profile
 - User-friendly and responsive design
 
 # Pages: 
